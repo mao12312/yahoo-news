@@ -1,6 +1,6 @@
 #!/bin/bash
 date=$(date +'%Y%m%d%H%M')
-dirname="/Users/ohmuramao/bot/yahoo-new-rss"
+dirname="/home/vagrant/workspace/yahoo-news/yahoo-new-rss"
 mkdir -p $dirname
 filename="$dirname/news-$date.xml"
 echo "save to $filename"
