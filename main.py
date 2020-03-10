@@ -5,5 +5,8 @@ tree = ET.parse('yahoo-news-rss/news-202003042125.xml')
 # get top elements
 root = tree.getroot()
 
-for child in root.iter():
-    print(child.text)
+path = 'text/outpu.txt'
+with open(path,mode='a') as f:
+    for child in root.iter(tag='title'):
+        f.write(child.text+"\n")
+f.close()
